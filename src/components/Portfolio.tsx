@@ -209,7 +209,7 @@ const Portfolio = () => {
                     <div className="relative overflow-hidden">
                       <div className="aspect-video relative">
                         <Image
-                          src="/image.jfif"
+                          src="/images.webp"
                           alt={project.title}
                           fill
                           className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -221,26 +221,6 @@ const Portfolio = () => {
                             .map((word) => word[0])
                             .join("")}
                         </div>
-                      </div>
-
-                      {/* Overlay */}
-                      <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                        <Button
-                          size="sm"
-                          variant="secondary"
-                          className="bg-white/90 text-black hover:bg-white"
-                        >
-                          <ExternalLink className="h-4 w-4 mr-2" />
-                          Live Demo
-                        </Button>
-                        <Button
-                          size="sm"
-                          variant="secondary"
-                          className="bg-white/90 text-black hover:bg-white"
-                        >
-                          <Github className="h-4 w-4 mr-2" />
-                          Code
-                        </Button>
                       </div>
                     </div>
 

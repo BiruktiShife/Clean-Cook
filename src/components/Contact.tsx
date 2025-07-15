@@ -244,7 +244,7 @@ const Contact = () => {
               <div className="mb-8">
                 <div className="relative overflow-hidden rounded-2xl shadow-xl shadow-green-500/20">
                   <Image
-                    src="/image.jfif"
+                    src="/images.webp"
                     alt="Contact us"
                     width={600}
                     height={300}

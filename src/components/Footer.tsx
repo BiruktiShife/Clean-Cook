@@ -286,9 +286,7 @@ const Footer = () => {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <p className="text-green-200/80">
-                  © 2024 YourCompany. All rights reserved.
-                </p>
+                <p className="text-green-200/80">© 2025 All rights reserved.</p>
                 <div className="flex items-center gap-4 text-sm text-green-300/70">
                   <a
                     href="#"
@@ -320,10 +318,6 @@ const Footer = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                <span className="text-green-200/80 flex items-center">
-                  Made with <span className="text-red-400 mx-1">❤️</span> by
-                  YourCompany
-                </span>
                 <Button
                   variant="ghost"
                   size="icon"
