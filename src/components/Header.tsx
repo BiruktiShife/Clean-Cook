@@ -93,7 +93,7 @@ const Header = () => {
     <motion.header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-transparent backdrop-blur-md border-b border-green-200/50 shadow-lg shadow-green-500/10"
+          ? "bg-transparent backdrop-blur-md shadow-lg shadow-green-500/10"
           : "bg-transparent"
       }`}
       initial={{ y: -100 }}
