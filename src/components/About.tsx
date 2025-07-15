@@ -143,7 +143,7 @@ const About = () => {
               <div className="relative">
                 <div className="relative overflow-hidden rounded-2xl shadow-xl shadow-green-500/20">
                   <Image
-                    src="/image.jfif"
+                    src="/images.webp"
                     alt="Our team and workspace"
                     width={600}
                     height={400}
