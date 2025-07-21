@@ -82,14 +82,14 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="py-24 lg:py-32 bg-gradient-to-br from-orange-50 via-yellow-50 to-amber-50 relative overflow-hidden border-t-4 border-green-400"
+      className="py-24 lg:py-32 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800 text-white relative overflow-hidden border-t-4 border-blue-300"
     >
       {/* Top separator */}
-      <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-green-600 to-transparent"></div>
+      <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-blue-600 to-transparent"></div>
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-1/4 left-1/5 w-64 h-64 bg-gradient-to-br from-orange-300 to-yellow-300 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/5 w-48 h-48 bg-gradient-to-br from-amber-300 to-orange-300 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/3 left-1/6 w-56 h-56 bg-gradient-to-br from-blue-300 to-blue-300 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/3 right-1/6 w-72 h-72 bg-gradient-to-br from-blue-300 to-blue-300 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -129,11 +129,11 @@ const Testimonials = () => {
                 transition={{ duration: 0.5 }}
                 className="max-w-4xl mx-auto"
               >
-                <Card className="relative overflow-hidden bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200/50 shadow-xl hover:shadow-green-500/20 transition-all duration-300">
+                <Card className="relative overflow-hidden bg-gradient-to-br from-blue-50 to-emerald-50 border border-blue-200/50 shadow-xl hover:shadow-blue-500/20 transition-all duration-300">
                   <CardContent className="p-8 lg:p-12 text-center">
                     {/* Quote Icon */}
                     <motion.div
-                      className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full mb-6 shadow-lg shadow-green-500/25"
+                      className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full mb-6 shadow-lg shadow-green-500/25"
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
                       transition={{ duration: 0.5, delay: 0.2 }}
@@ -199,7 +199,7 @@ const Testimonials = () => {
                 variant="outline"
                 size="icon"
                 onClick={prevTestimonial}
-                className="rounded-full border-green-300 text-green-600 hover:bg-green-50 hover:border-green-400 transition-all duration-300"
+                className="rounded-full border-blue-300 text-blue-600 hover:bg-blue-50 hover:border-blue-400 transition-all duration-300"
               >
                 <ChevronLeft className="h-4 w-4" />
               </Button>
@@ -207,7 +207,7 @@ const Testimonials = () => {
                 variant="outline"
                 size="icon"
                 onClick={nextTestimonial}
-                className="rounded-full border-green-300 text-green-600 hover:bg-green-50 hover:border-green-400 transition-all duration-300"
+                className="rounded-full border-lueb-300 text-blue-600 hover:bg-blue-50 hover:border-blue-400 transition-all duration-300"
               >
                 <ChevronRight className="h-4 w-4" />
               </Button>
@@ -222,8 +222,8 @@ const Testimonials = () => {
                 onClick={() => setCurrentIndex(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? "bg-green-500 scale-125 shadow-lg shadow-green-500/50"
-                    : "bg-green-200 hover:bg-green-300"
+                    ? "bg-blue-500 scale-125 shadow-lg shadow-blue-500/50"
+                    : "bg-blue-200 hover:bg-blue-300"
                 }`}
               />
             ))}

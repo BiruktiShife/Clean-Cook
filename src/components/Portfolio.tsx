@@ -177,8 +177,8 @@ const Portfolio = () => {
                 onClick={() => setActiveFilter(filter)}
                 className={`transition-all duration-300 ${
                   activeFilter === filter
-                    ? "bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-lg shadow-green-500/25"
-                    : "border-green-300 text-green-700 hover:bg-green-50 hover:border-green-400"
+                    ? "bg-gradient-to-r from-blue-600 to-blue-600 text-white shadow-lg shadow-blue-500/25"
+                    : "border-blue-300 text-blue-700 hover:bg-blue-50 hover:border-blue-400"
                 }`}
               >
                 {filter}
@@ -204,7 +204,7 @@ const Portfolio = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   layout
                 >
-                  <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-green-100 shadow-lg hover:shadow-green-500/20 bg-white/80 backdrop-blur-sm">
+                  <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-blue-100 shadow-lg hover:shadow-blue-500/20 bg-white/80 backdrop-blur-sm">
                     {/* Project Image */}
                     <div className="relative overflow-hidden">
                       <div className="aspect-video relative">

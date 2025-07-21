@@ -70,14 +70,14 @@ const Hero = () => {
               priority={index === 0}
             />
             <div className="absolute inset-0 bg-black/40"></div>
-            <div className="absolute inset-0 bg-gradient-to-br from-green-900/30 via-transparent to-emerald-900/30"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-900/30 via-transparent to-blue-900/30"></div>
           </motion.div>
         ))}
       </div>
 
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute top-1/4 left-1/4 w-64 h-64 bg-green-500/20 rounded-full blur-3xl"
+          className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl"
           animate={{
             x: [0, 100, 0],
             y: [0, -50, 0],
@@ -89,7 +89,7 @@ const Hero = () => {
           }}
         />
         <motion.div
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-green-400/15 rounded-full blur-3xl"
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-400/15 rounded-full blur-3xl"
           animate={{
             x: [0, -100, 0],
             y: [0, 50, 0],
@@ -101,7 +101,7 @@ const Hero = () => {
           }}
         />
         <motion.div
-          className="absolute top-1/2 right-1/3 w-48 h-48 bg-emerald-500/20 rounded-full blur-2xl"
+          className="absolute top-1/2 right-1/3 w-48 h-48 bg-blue-500/20 rounded-full blur-2xl"
           animate={{
             x: [0, 50, 0],
             y: [0, -30, 0],
@@ -127,7 +127,7 @@ const Hero = () => {
           }}
         />
         <motion.div
-          className="absolute top-1/6 right-1/6 w-40 h-40 bg-green-600/15 rounded-full blur-2xl"
+          className="absolute top-1/6 right-1/6 w-40 h-40 bg-blue-600/15 rounded-full blur-2xl"
           animate={{
             x: [0, 60, 0],
             y: [0, 40, 0],
@@ -152,14 +152,14 @@ const Hero = () => {
           >
             Transforming{" "}
             <motion.span
-              className="text-green-400 relative"
+              className="text-blue-400 relative"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
               Ethiopia
               <motion.div
-                className="absolute -bottom-2 left-0 right-0 h-1 bg-green-400/50 rounded-full"
+                className="absolute -bottom-2 left-0 right-0 h-1 bg-blue-400/50 rounded-full"
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
@@ -190,7 +190,7 @@ const Hero = () => {
             <Button
               size="lg"
               onClick={() => scrollToSection("#contact")}
-              className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-8 py-6 text-lg font-semibold group shadow-lg"
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-6 text-lg font-semibold group shadow-lg"
             >
               Membership Registration
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

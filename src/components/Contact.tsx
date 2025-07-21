@@ -77,14 +77,14 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-24 lg:py-32 bg-gradient-to-br from-slate-100 via-gray-50 to-zinc-100 relative overflow-hidden border-t-4 border-emerald-400"
+      className="py-24 lg:py-32 bg-gradient-to-br from-blue-50 via-blue-50 to-blue-100 relative overflow-hidden border-t-4 border-blue-300"
     >
       {/* Top separator */}
-      <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-emerald-600 to-transparent"></div>
+      <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-blue-600 to-transparent"></div>
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-gradient-to-br from-slate-300 to-gray-300 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-48 h-48 bg-gradient-to-br from-zinc-300 to-slate-300 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-blue-300 to-blue-300 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-gradient-to-br from-blue-300 to-blue-300 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -121,7 +121,7 @@ const Contact = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <Card className="shadow-xl border border-green-200/50 bg-white/80 backdrop-blur-sm">
+              <Card className="shadow-xl border border-blue-200/50 bg-white/80 backdrop-blur-sm">
                 <CardHeader>
                   <CardTitle className="text-2xl font-bold text-foreground">
                     Partner with us
@@ -140,7 +140,7 @@ const Contact = () => {
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.5 }}
                     >
-                      <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
+                      <CheckCircle className="h-16 w-16 text-blue-500 mx-auto mb-4" />
                       <h3 className="text-xl font-semibold text-foreground mb-2">
                         Message Sent Successfully!
                       </h3>
@@ -208,7 +208,7 @@ const Contact = () => {
                       <Button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white py-6 text-lg font-semibold group shadow-lg shadow-green-500/25 hover:shadow-green-500/40 transition-all duration-300"
+                        className="w-full bg-gradient-to-r from-blue-600 to-blue-600 hover:from-blue-700 hover:to-blue-700 text-white py-6 text-lg font-semibold group shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all duration-300"
                       >
                         {isSubmitting ? (
                           <motion.div
@@ -242,7 +242,7 @@ const Contact = () => {
             >
               {/* Contact Image */}
               <div className="mb-8">
-                <div className="relative overflow-hidden rounded-2xl shadow-xl shadow-green-500/20">
+                <div className="relative overflow-hidden rounded-2xl shadow-xl shadow-blue-500/20">
                   <Image
                     src="/images.webp"
                     alt="Contact us"
@@ -250,10 +250,10 @@ const Contact = () => {
                     height={300}
                     className="w-full h-auto object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-green-900/30 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 text-white">
                     <h3 className="text-xl font-bold mb-1">Get In Touch</h3>
-                    <p className="text-green-100">We'd love to hear from you</p>
+                    <p className="text-blue-100">We'd love to hear from you</p>
                   </div>
                 </div>
               </div>

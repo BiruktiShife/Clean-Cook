@@ -35,13 +35,13 @@ const TrustedCompanies = () => {
   const duplicatedCompanies = [...companies, ...companies];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-green-50 border-t-4 border-green-200 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 border-t-4 border-blue-200 relative overflow-hidden">
       {/* Top separator line */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-green-500 to-transparent"></div>
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-10 left-10 w-20 h-20 bg-green-200 rounded-full blur-2xl"></div>
-        <div className="absolute bottom-10 right-10 w-24 h-24 bg-emerald-200 rounded-full blur-2xl"></div>
+        <div className="absolute top-10 left-10 w-20 h-20 bg-blue-200 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-10 right-10 w-24 h-24 bg-blue-200 rounded-full blur-2xl"></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -126,22 +126,22 @@ const TrustedCompanies = () => {
               {
                 number: "50+",
                 label: "Partner Organizations",
-                color: "text-green-600",
+                color: "text-blue-600",
               },
               {
                 number: "8",
                 label: "Regions Covered",
-                color: "text-emerald-600",
+                color: "text-yellow-600",
               },
               {
                 number: "2M+",
                 label: "Lives Impacted",
-                color: "text-teal-600",
+                color: "text-green-600",
               },
               {
                 number: "80%",
                 label: "Emission Reduction",
-                color: "text-green-500",
+                color: "text-purple-500",
               },
             ].map((stat, index) => (
               <motion.div
@@ -165,7 +165,7 @@ const TrustedCompanies = () => {
       </div>
 
       {/* Bottom separator line */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-green-500 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
     </section>
   );
 };
