@@ -46,14 +46,14 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-24 lg:py-32 bg-gradient-to-br from-blue-100 via-blue-50 to-blue-100 relative overflow-hidden border-t-4 border-blue-300"
+      className="py-24 lg:py-32 bg-gradient-to-br from-[#0D98BA]/10 via-[#0D98BA]/5 to-[#0D98BA]/10 relative overflow-hidden border-t-4 border-[#0D98BA]/30"
     >
       {/* Top separator */}
-      <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-blue-600 to-transparent"></div>
+      <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-[#0D98BA] to-transparent"></div>
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-blue-200 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-blue-200 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-10 w-32 h-32 bg-[#0D98BA]/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-[#0D98BA]/20 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -141,7 +141,7 @@ const About = () => {
             >
               {/* Company Image */}
               <div className="relative">
-                <div className="relative overflow-hidden rounded-2xl shadow-xl shadow-blue-500/20">
+                <div className="relative overflow-hidden rounded-2xl shadow-xl shadow-[#0D98BA]/20">
                   <Image
                     src="/images.webp"
                     alt="Our team and workspace"
@@ -149,11 +149,11 @@ const About = () => {
                     height={400}
                     className="w-full h-auto object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0D98BA]/30 to-transparent"></div>
                 </div>
                 {/* Decorative elements */}
-                <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-500 rounded-full opacity-80"></div>
-                <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-blue-500 rounded-full opacity-60"></div>
+                <div className="absolute -top-4 -right-4 w-8 h-8 bg-[#0D98BA] rounded-full opacity-80"></div>
+                <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-[#0D98BA] rounded-full opacity-60"></div>
               </div>
 
               {/* Stats Grid */}
@@ -162,7 +162,7 @@ const About = () => {
                   {
                     number: "2M+",
                     label: "Households Reached",
-                    color: "text-blue-600",
+                    color: "text-[#0D98BA]",
                   },
                   {
                     number: "80%",

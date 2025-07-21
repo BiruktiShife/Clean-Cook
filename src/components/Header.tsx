@@ -93,7 +93,7 @@ const Header = () => {
     <motion.header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-transparent backdrop-blur-md shadow-lg shadow-blue-500/10"
+          ? "bg-transparent backdrop-blur-md shadow-lg shadow-[#0D98BA]/10"
           : "bg-transparent"
       }`}
       initial={{ y: -100 }}
@@ -148,8 +148,8 @@ const Header = () => {
                   }}
                   className={`${
                     isScrolled
-                      ? "text-black hover:text-blue-600"
-                      : "text-white hover:text-blue-400"
+                      ? "text-black hover:text-[#0D98BA]"
+                      : "text-white hover:text-[#0D98BA]"
                   } transition-colors duration-200 font-medium relative group flex items-center`}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -166,7 +166,7 @@ const Header = () => {
                   )}
                   <span
                     className={`absolute bottom-0 left-0 w-0 h-0.5 ${
-                      isScrolled ? "bg-blue-600" : "bg-blue-400"
+                      isScrolled ? "bg-[#0D98BA]" : "bg-[#0D98BA]"
                     } group-hover:w-full transition-all duration-300`}
                   ></span>
                 </motion.a>
@@ -175,7 +175,7 @@ const Header = () => {
                 {item.hasDropdown && activeDropdown === item.name && (
                   <AnimatePresence>
                     <motion.div
-                      className="absolute top-full left-0 mt-2 w-56 bg-white/95 backdrop-blur-md rounded-lg shadow-xl border border-blue-200/50 py-2 z-50"
+                      className="absolute top-full left-0 mt-2 w-56 bg-white/95 backdrop-blur-md rounded-lg shadow-xl border border-[#0D98BA]/50 py-2 z-50"
                       initial={{ opacity: 0, y: -10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
@@ -191,7 +191,7 @@ const Header = () => {
                               scrollToSection(dropdownItem.href);
                               setActiveDropdown(null);
                             }}
-                            className="block px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-colors duration-200"
+                            className="block px-4 py-2 text-gray-700 hover:text-[#0D98BA] hover:bg-[#E6F4F8] transition-colors duration-200"
                             initial={{ opacity: 0, x: -10 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{
@@ -219,7 +219,7 @@ const Header = () => {
           >
             <Button
               onClick={() => scrollToSection("#contact")}
-              className="bg-gradient-to-r from-blue-600 to-blue-600 hover:from-blue-700 hover:to-blue-700 text-white shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all duration-300"
+              className="bg-gradient-to-r from-[#0D98BA] to-[#0D98BA] hover:from-[#0B7A94] hover:to-[#0B7A94] text-white shadow-lg shadow-[#0D98BA]/25 hover:shadow-[#0D98BA]/40 transition-all duration-300"
             >
               Get Started
             </Button>
@@ -247,7 +247,7 @@ const Header = () => {
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-black/20 backdrop-blur-md border-t border-blue-200/50 shadow-lg">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-black/20 backdrop-blur-md border-t border-[#0D98BA]/50 shadow-lg">
               {navItems.map((item) => (
                 <div key={item.name}>
                   <a
@@ -256,7 +256,7 @@ const Header = () => {
                       e.preventDefault();
                       scrollToSection(item.href);
                     }}
-                    className="flex items-center justify-between px-4 py-3 text-base font-medium text-white hover:text-blue-400 hover:bg-blue-500/20 rounded-lg transition-colors duration-200"
+                    className="flex items-center justify-between px-4 py-3 text-base font-medium text-white hover:text-[#0D98BA] hover:bg-[#0D98BA]/20 rounded-lg transition-colors duration-200"
                   >
                     {item.name}
                     {item.hasDropdown && <ChevronDown className="h-4 w-4" />}
@@ -271,7 +271,7 @@ const Header = () => {
                             e.preventDefault();
                             scrollToSection(dropdownItem.href);
                           }}
-                          className="block px-4 py-2 text-sm text-gray-300 hover:text-blue-400 hover:bg-blue-500/10 rounded-lg transition-colors duration-200"
+                          className="block px-4 py-2 text-sm text-gray-300 hover:text-[#0D98BA] hover:bg-[#0D98BA]/10 rounded-lg transition-colors duration-200"
                         >
                           {dropdownItem.name}
                         </a>
@@ -283,7 +283,7 @@ const Header = () => {
               <div className="px-3 py-2">
                 <Button
                   onClick={() => scrollToSection("#contact")}
-                  className="w-full bg-gradient-to-r from-blue-600 to-blue-600 hover:from-blue-700 hover:to-blue-700 text-white shadow-lg shadow-blue-500/25"
+                  className="w-full bg-gradient-to-r from-[#0D98BA] to-[#0D98BA] hover:from-[#0B7A94] hover:to-[#0B7A94] text-white shadow-lg shadow-[#0D98BA]/25"
                 >
                   Get Started
                 </Button>

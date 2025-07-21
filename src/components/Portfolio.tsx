@@ -126,14 +126,14 @@ const Portfolio = () => {
   return (
     <section
       id="portfolio"
-      className="py-24 lg:py-32 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 relative overflow-hidden border-t-4 border-teal-300"
+      className="py-24 lg:py-32 bg-gradient-to-br from-[#0D98BA]/10 via-indigo-50 to-purple-50 relative overflow-hidden border-t-4 border-teal-300"
     >
       {/* Top separator */}
       <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-teal-600 to-transparent"></div>
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-1/3 left-1/6 w-56 h-56 bg-gradient-to-br from-blue-300 to-indigo-300 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/3 right-1/6 w-72 h-72 bg-gradient-to-br from-purple-300 to-blue-300 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/3 left-1/6 w-56 h-56 bg-gradient-to-br from-[#0D98BA]/60 to-indigo-300 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/3 right-1/6 w-72 h-72 bg-gradient-to-br from-purple-300 to-[#0D98BA]/60 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -177,8 +177,8 @@ const Portfolio = () => {
                 onClick={() => setActiveFilter(filter)}
                 className={`transition-all duration-300 ${
                   activeFilter === filter
-                    ? "bg-gradient-to-r from-blue-600 to-blue-600 text-white shadow-lg shadow-blue-500/25"
-                    : "border-blue-300 text-blue-700 hover:bg-blue-50 hover:border-blue-400"
+                    ? "bg-gradient-to-r from-[#0D98BA] to-[#0D98BA] text-white shadow-lg shadow-[#0D98BA]/25"
+                    : "border-[#0D98BA]/60 text-[#0D98BA] hover:bg-[#0D98BA]/10 hover:border-[#0D98BA]"
                 }`}
               >
                 {filter}
@@ -204,7 +204,7 @@ const Portfolio = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   layout
                 >
-                  <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-blue-100 shadow-lg hover:shadow-blue-500/20 bg-white/80 backdrop-blur-sm">
+                  <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-[#0D98BA]/20 shadow-lg hover:shadow-[#0D98BA]/20 bg-white/80 backdrop-blur-sm">
                     {/* Project Image */}
                     <div className="relative overflow-hidden">
                       <div className="aspect-video relative">
@@ -231,7 +231,7 @@ const Portfolio = () => {
                       </Badge>
 
                       {/* Project Title */}
-                      <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
+                      <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-[#0D98BA] transition-colors duration-300">
                         {project.title}
                       </h3>
 
@@ -258,7 +258,7 @@ const Portfolio = () => {
                         <Button
                           size="sm"
                           variant="outline"
-                          className="flex-1 text-xs hover:bg-primary/10"
+                          className="flex-1 text-xs hover:bg-[#0D98BA]/10"
                         >
                           <ExternalLink className="h-3 w-3 mr-1" />
                           View Live
@@ -266,7 +266,7 @@ const Portfolio = () => {
                         <Button
                           size="sm"
                           variant="outline"
-                          className="flex-1 text-xs hover:bg-primary/10"
+                          className="flex-1 text-xs hover:bg-[#0D98BA]/10"
                         >
                           <Github className="h-3 w-3 mr-1" />
                           Source

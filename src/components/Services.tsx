@@ -113,14 +113,14 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="py-24 lg:py-32 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800 text-white relative overflow-hidden border-t-4 border-blue-300"
+      className="py-24 lg:py-32 bg-gradient-to-br from-gray-900 via-[#0D98BA] to-gray-800 text-white relative overflow-hidden border-t-4 border-[#0D98BA]"
     >
       {/* Top separator */}
-      <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-blue-600 to-transparent"></div>
+      <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-[#0D98BA] to-transparent"></div>
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-gradient-to-br from-blue-300 to-blue-300 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-48 h-48 bg-gradient-to-br from-blue-300 to-blue-300 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-gradient-to-br from-[#0D98BA] to-[#0D98BA] rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-48 h-48 bg-gradient-to-br from-[#0D98BA] to-[#0D98BA] rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -135,7 +135,7 @@ const Services = () => {
           >
             <Badge
               variant="outline"
-              className="mb-4 text-blue-400 border-blue-400"
+              className="mb-4 text-[#0D98BA] border-[#0D98BA]"
             >
               Our Programs
             </Badge>
@@ -159,7 +159,7 @@ const Services = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className="h-full hover:shadow-xl transition-all duration-300 group hover:-translate-y-2 border border-blue-100 shadow-lg hover:shadow-blue-500/20 bg-white/80 backdrop-blur-sm">
+                <Card className="h-full hover:shadow-xl transition-all duration-300 group hover:-translate-y-2 border border-[#0D98BA]/20 shadow-lg hover:shadow-[#0D98BA]/20 bg-white/80 backdrop-blur-sm">
                   <CardHeader className="pb-4">
                     <motion.div
                       className={`inline-flex items-center justify-center w-14 h-14 ${service.bgColor} rounded-xl mb-4 group-hover:scale-110 transition-transform duration-300`}
@@ -190,7 +190,7 @@ const Services = () => {
                           }}
                           viewport={{ once: true }}
                         >
-                          <CheckCircle className="h-4 w-4 text-blue-500 mr-2 flex-shrink-0" />
+                          <CheckCircle className="h-4 w-4 text-[#0D98BA] mr-2 flex-shrink-0" />
                           <span className="text-muted-foreground">
                             {feature}
                           </span>
@@ -214,7 +214,7 @@ const Services = () => {
 
           {/* CTA Section */}
           <motion.div
-            className="text-center bg-gradient-to-r from-blue-500/10 via-emerald-500/5 to-teal-500/10 rounded-2xl p-8 lg:p-12 border border-blue-200/50 shadow-lg"
+            className="text-center bg-gradient-to-r from-[#0D98BA]/10 via-emerald-500/5 to-teal-500/10 rounded-2xl p-8 lg:p-12 border border-[#0D98BA]/50 shadow-lg"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -223,7 +223,7 @@ const Services = () => {
             <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-4 ">
               Ready to Transform Your Business?
             </h3>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto ">
+            <p className="text-lg text-white mb-8 max-w-2xl mx-auto ">
               Let's discuss how our services can help you achieve your goals and
               drive growth.
             </p>
@@ -231,7 +231,7 @@ const Services = () => {
               <Button
                 size="lg"
                 onClick={scrollToContact}
-                className="bg-gradient-to-r from-blue-600 to-blue-600 hover:from-blue-700 hover:to-blue-700 text-white px-8 py-6 text-lg font-semibold group shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all duration-300"
+                className="bg-gradient-to-r from-[#0D98BA] to-[#0D98BA] hover:from-[#0B7A94] hover:to-[#0B7A94] text-white px-8 py-6 text-lg font-semibold group shadow-lg shadow-[#0D98BA]/25 hover:shadow-[#0D98BA]/40 transition-all duration-300"
               >
                 Start Your Project
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -245,7 +245,7 @@ const Services = () => {
                     element.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
-                className="px-8 py-6 text-lg font-semibold border-blue-300 text-blue-700 hover:bg-blue-50 hover:border-blue-400 transition-all duration-300"
+                className="px-8 py-6 text-lg font-semibold border-[#0D98BA] text-[#0D98BA] hover:bg-[#0D98BA]/10 hover:border-[#0D98BA] transition-all duration-300"
               >
                 View Our Work
               </Button>

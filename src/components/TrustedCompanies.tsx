@@ -35,13 +35,13 @@ const TrustedCompanies = () => {
   const duplicatedCompanies = [...companies, ...companies];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 border-t-4 border-blue-200 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-[#0D98BA]/10 border-t-4 border-[#0D98BA]/40 relative overflow-hidden">
       {/* Top separator line */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#0D98BA] to-transparent"></div>
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-10 left-10 w-20 h-20 bg-blue-200 rounded-full blur-2xl"></div>
-        <div className="absolute bottom-10 right-10 w-24 h-24 bg-blue-200 rounded-full blur-2xl"></div>
+        <div className="absolute top-10 left-10 w-20 h-20 bg-[#0D98BA]/40 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-10 right-10 w-24 h-24 bg-[#0D98BA]/40 rounded-full blur-2xl"></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -126,7 +126,7 @@ const TrustedCompanies = () => {
               {
                 number: "50+",
                 label: "Partner Organizations",
-                color: "text-blue-600",
+                color: "text-[#0D98BA]",
               },
               {
                 number: "8",
@@ -165,7 +165,7 @@ const TrustedCompanies = () => {
       </div>
 
       {/* Bottom separator line */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#0D98BA] to-transparent"></div>
     </section>
   );
 };
