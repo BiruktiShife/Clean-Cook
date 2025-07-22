@@ -82,14 +82,14 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="py-24 lg:py-32 bg-gradient-to-br from-gray-900 via-[#0D98BA] to-900 to-gray-800 text-white relative overflow-hidden border-t-4 border-turquoise-300"
+      className="py-24 lg:py-32 bg-gradient-to-br from-gray-900 via-primary to-gray-800 text-white relative overflow-hidden border-t-4 border-primary"
     >
       {/* Top separator */}
-      <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-[#0D98BA] to-transparent"></div>
+      <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-1/3 left-1/6 w-56 h-56 bg-gradient-to-br from-[#0D98BA] to-[#0D98BA] rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/3 right-1/6 w-72 h-72 bg-gradient-to-br from-[#0D98BA] to-[#0D98BA] rounded-full blur-3xl"></div>
+        <div className="absolute top-1/3 left-1/6 w-56 h-56 bg-gradient-to-br from-primary to-primary rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/3 right-1/6 w-72 h-72 bg-gradient-to-br from-primary to-primary rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -129,11 +129,11 @@ const Testimonials = () => {
                 transition={{ duration: 0.5 }}
                 className="max-w-4xl mx-auto"
               >
-                <Card className="relative overflow-hidden bg-gradient-to-br from-[#BD98BA]/5A]/5 to-emerald-50 border bor[#0D98BA]98BA]/50 shadow-xl hover:sh[##D98BA]D98BA]/20 transition-all duration-300">
+                <Card className="relative overflow-hidden bg-gradient-to-br from-primary/5 to-emerald-50 border border-primary/50 shadow-xl hover:shadow-primary/20 transition-all duration-300">
                   <CardContent className="p-8 lg:p-12 text-center">
                     {/* Quote Icon */}
                     <motion.div
-                      className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500o-b-blue-600nded-full mb-6 shadow-lg shadow-green-500/25"
+                      className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary to-primary rounded-full mb-6 shadow-lg shadow-green-500/25"
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
                       transition={{ duration: 0.5, delay: 0.2 }}
@@ -199,7 +199,7 @@ const Testimonials = () => {
                 variant="outline"
                 size="icon"
                 onClick={prevTestimonial}
-                className="rounded-full border-blue-300  textblue-600 h hover:-blue-50 hover0 hover:border0- transi0 transition-all duration-300"
+                className="rounded-full border-primary text-primary hover:bg-primary/10 hover:border-primary transition-all duration-300"
               >
                 <ChevronLeft className="h-4 w-4" />
               </Button>
@@ -207,7 +207,7 @@ const Testimonials = () => {
                 variant="outline"
                 size="icon"
                 onClick={nextTestimonial}
-                className="rounded-full border-lueb-300  tex-blue-600 h hover:bblue-50 hover0 hover:border-0 transi0 transition-all duration-300"
+                className="rounded-full border-primary text-primary hover:bg-primary/10 hover:border-primary transition-all duration-300"
               >
                 <ChevronRight className="h-4 w-4" />
               </Button>
@@ -222,8 +222,8 @@ const Testimonials = () => {
                 onClick={() => setCurrentIndex(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? "bg-cyan-500 scale-125 shadow-lg shadow-cyan-500/50"
-                    : "bg-cyan-200 hover:bg-cyan-300"
+                    ? "bg-primary scale-125 shadow-lg shadow-primary/50"
+                    : "bg-primary/30 hover:bg-primary/50"
                 }`}
               />
             ))}

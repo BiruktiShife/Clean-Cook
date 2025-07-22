@@ -219,7 +219,7 @@ const Header = () => {
           >
             <Button
               onClick={() => scrollToSection("#contact")}
-              className="bg-gradient-to-r from-[#0D98BA] to-[#0D98BA] hover:from-[#0B7A94] hover:to-[#0B7A94] text-white shadow-lg shadow-[#0D98BA]/25 hover:shadow-[#0D98BA]/40 transition-all duration-300"
+              className="bg-gradient-to-r from-primary to-primary hover:from-primary/90 hover:to-primary/90 text-white shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all duration-300"
             >
               Get Started
             </Button>
@@ -283,7 +283,7 @@ const Header = () => {
               <div className="px-3 py-2">
                 <Button
                   onClick={() => scrollToSection("#contact")}
-                  className="w-full bg-gradient-to-r from-[#0D98BA] to-[#0D98BA] hover:from-[#0B7A94] hover:to-[#0B7A94] text-white shadow-lg shadow-[#0D98BA]/25"
+                  className="w-full bg-gradient-to-r from-primary to-primary hover:from-primary/90 hover:to-primary/90 text-white shadow-lg shadow-primary/25"
                 >
                   Get Started
                 </Button>

@@ -70,10 +70,10 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-gray-900 via-[#0D98BA] to-gray-800 text-white relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-gray-900 via-primary to-gray-800 text-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0D98BA]/20 to-[#0D98BA]/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/20"></div>
         <div
           className="absolute inset-0"
           style={{
@@ -126,10 +126,10 @@ const Footer = () => {
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     viewport={{ once: true }}
                   >
-                    <div className="w-8 h-8 bg-[#0D98BA] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
                       <item.icon className="h-4 w-4 text-white" />
                     </div>
-                    <span className="text-white leading-relaxed">
+                    <span className="text-primary-foreground/90 leading-relaxed">
                       {item.text}
                     </span>
                   </motion.div>
@@ -138,13 +138,15 @@ const Footer = () => {
 
               {/* Social Links */}
               <div>
-                <h4 className="text-white font-semibold mb-4">Follow Us</h4>
+                <h4 className="text-primary-foreground/80 font-semibold mb-4">
+                  Follow Us
+                </h4>
                 <div className="flex gap-3">
                   {socialLinks.map((social, index) => (
                     <motion.a
                       key={social.label}
                       href={social.href}
-                      className="w-12 h-12 bg-gray-700/50 hover:bg-[#0D98BA] hover:text-white rounded-xl flex items-center justify-center transition-all duration-300 group border border-gray-600/30 hover:border-[#0D98BA]"
+                      className="w-12 h-12 bg-gray-700/50 hover:bg-primary hover:text-white rounded-xl flex items-center justify-center transition-all duration-300 group border border-gray-600/30 hover:border-primary"
                       whileHover={{ scale: 1.1, y: -2 }}
                       whileTap={{ scale: 0.95 }}
                       initial={{ opacity: 0, y: 20 }}
@@ -153,7 +155,7 @@ const Footer = () => {
                       viewport={{ once: true }}
                       aria-label={social.label}
                     >
-                      <social.icon className="h-5 w-5 text-white group-hover:text-white transition-colors" />
+                      <social.icon className="h-5 w-5 text-primary-foreground/80 group-hover:text-white transition-colors" />
                     </motion.a>
                   ))}
                 </div>
@@ -167,7 +169,7 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <h4 className="text-xl font-bold text-white mb-6 pb-2 border-b border-[#0D98BA]/30">
+              <h4 className="text-xl font-bold text-primary-foreground/80 mb-6 pb-2 border-b border-primary/30">
                 Programs
               </h4>
               <ul className="space-y-3">
@@ -185,9 +187,9 @@ const Footer = () => {
                         e.preventDefault();
                         scrollToSection(link.href);
                       }}
-                      className="text-white hover:text-[#0D98BA] transition-colors duration-200 flex items-center group"
+                      className="text-primary-foreground/60 hover:text-primary-foreground transition-colors duration-200 flex items-center group"
                     >
-                      <span className="w-1.5 h-1.5 bg-[#0D98BA] rounded-full mr-3 group-hover:bg-[#0D98BA] transition-colors"></span>
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 group-hover:bg-primary transition-colors"></span>
                       {link.name}
                     </a>
                   </motion.li>
@@ -202,7 +204,7 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <h4 className="text-xl font-bold text-white mb-6 pb-2 border-b border-[#0D98BA]/30">
+              <h4 className="text-xl font-bold text-primary-foreground/80 mb-6 pb-2 border-b border-primary/30">
                 Organization
               </h4>
               <ul className="space-y-3">
@@ -220,9 +222,9 @@ const Footer = () => {
                         e.preventDefault();
                         scrollToSection(link.href);
                       }}
-                      className="text-white hover:text-[#0D98BA] transition-colors duration-200 flex items-center group"
+                      className="text-primary-foreground/60 hover:text-primary-foreground transition-colors duration-200 flex items-center group"
                     >
-                      <span className="w-1.5 h-1.5 bg-[#0D98BA] rounded-full mr-3 group-hover:bg-[#0D98BA] transition-colors"></span>
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 group-hover:bg-primary transition-colors"></span>
                       {link.name}
                     </a>
                   </motion.li>
@@ -237,7 +239,7 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <h4 className="text-xl font-bold text-white mb-6 pb-2 border-b border-[#0D98BA]/30">
+              <h4 className="text-xl font-bold text-primary-foreground/80 mb-6 pb-2 border-b border-primary/30">
                 Resources
               </h4>
               <ul className="space-y-3">
@@ -255,9 +257,9 @@ const Footer = () => {
                         e.preventDefault();
                         scrollToSection(link.href);
                       }}
-                      className="text-white hover:text-[#0D98BA] transition-colors duration-200 flex items-center group"
+                      className="text-primary-foreground/60 hover:text-primary-foreground transition-colors duration-200 flex items-center group"
                     >
-                      <span className="w-1.5 h-1.5 bg-[#0D98BA] rounded-full mr-3 group-hover:bg-[#0D98BA] transition-colors"></span>
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 group-hover:bg-primary transition-colors"></span>
                       {link.name}
                     </a>
                   </motion.li>
@@ -270,8 +272,8 @@ const Footer = () => {
 
       {/* Decorative separator */}
       <div className="relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#0D98BA]/30 to-transparent h-px"></div>
-        <div className="relative bg-[#0D98BA]/20 h-px"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/30 to-transparent h-px"></div>
+        <div className="relative bg-primary/20 h-px"></div>
       </div>
 
       {/* Bottom Footer */}
@@ -286,25 +288,27 @@ const Footer = () => {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <p className="text-[#0D98BA]/60">© 2025 All rights reserved.</p>
-                <div className="flex items-center gap-4 text-sm text-[#0D98BA]/50">
+                <p className="text-primary-foreground/60">
+                  © 2025 All rights reserved.
+                </p>
+                <div className="flex items-center gap-4 text-sm text-primary-foreground/50">
                   <a
                     href="#"
-                    className="hover:text-[#0D98BA] transition-colors"
+                    className="hover:text-primary-foreground transition-colors"
                   >
                     Privacy Policy
                   </a>
                   <span>•</span>
                   <a
                     href="#"
-                    className="hover:text-[#0D98BA] transition-colors"
+                    className="hover:text-primary-foreground transition-colors"
                   >
                     Terms of Service
                   </a>
                   <span>•</span>
                   <a
                     href="#"
-                    className="hover:text-[#0D98BA] transition-colors"
+                    className="hover:text-primary-foreground transition-colors"
                   >
                     Cookies
                   </a>
@@ -322,10 +326,10 @@ const Footer = () => {
                   variant="ghost"
                   size="icon"
                   onClick={scrollToTop}
-                  className="rounded-full bg-gray-700/30 hover:bg-[#0D98BA] hover:text-white border border-gray-600/30 hover:border-[#0D98BA] transition-all duration-300"
+                  className="rounded-full bg-gray-700/30 hover:bg-primary hover:text-white border border-gray-600/30 hover:border-primary transition-all duration-300"
                   aria-label="Scroll to top"
                 >
-                  <ArrowUp className="h-4 w-4 text-[#0D98BA]/80" />
+                  <ArrowUp className="h-4 w-4 text-primary-foreground/80" />
                 </Button>
               </motion.div>
             </div>
